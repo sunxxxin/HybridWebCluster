@@ -1,0 +1,105 @@
+2024-08-14 17:03:21|ERROR|app.py:42|'dict' object has no attribute 'has_key'
+Traceback (most recent call last):
+  File "app.py", line 40, in wrapper
+    return func(*args, **kwargs)
+  File "app.py", line 47, in wrapper
+    if session.__dict__.has_key('userid'):
+AttributeError: 'dict' object has no attribute 'has_key'
+2024-08-14 17:34:08|ERROR|app.py:42|'dict' object has no attribute 'has_key'
+Traceback (most recent call last):
+  File "app.py", line 40, in wrapper
+    return func(*args, **kwargs)
+  File "app.py", line 47, in wrapper
+    if session.__dict__.has_key('userid'):
+AttributeError: 'dict' object has no attribute 'has_key'
+2024-08-14 17:35:40|ERROR|app.py:42|'dict' object has no attribute 'has_key'
+Traceback (most recent call last):
+  File "app.py", line 40, in wrapper
+    return func(*args, **kwargs)
+  File "app.py", line 47, in wrapper
+    if session.__dict__.has_key('userid'):
+AttributeError: 'dict' object has no attribute 'has_key'
+2024-08-14 18:59:52|ERROR|app.py:42|InitPackage() takes 0 positional arguments but 1 was given
+Traceback (most recent call last):
+  File "app.py", line 40, in wrapper
+    return func(*args, **kwargs)
+  File "app.py", line 84, in POST
+    Account.InitUser(phonenum, password, nick, sex, idcard)
+  File "/home/sunxin/test1/classPy/webPy/./Account.py", line 98, in InitUser
+    DBManage.InitPackage(packageinfo)
+TypeError: InitPackage() takes 0 positional arguments but 1 was given
+2024-08-14 19:09:15|ERROR|app.py:42|InitPackage() takes 0 positional arguments but 1 was given
+Traceback (most recent call last):
+  File "app.py", line 40, in wrapper
+    return func(*args, **kwargs)
+  File "app.py", line 84, in POST
+    Account.InitUser(phonenum, password, nick, sex, idcard)
+  File "/home/sunxin/test1/classPy/webPy/./Account.py", line 100, in InitUser
+    DBManage.InitPackage(packageinfo)
+TypeError: InitPackage() takes 0 positional arguments but 1 was given
+2024-08-14 19:21:10|ERROR|app.py:42|InitPackage() takes 0 positional arguments but 1 was given
+Traceback (most recent call last):
+  File "app.py", line 40, in wrapper
+    return func(*args, **kwargs)
+  File "app.py", line 84, in POST
+    Account.InitUser(phonenum, password, nick, sex, idcard)
+  File "/home/sunxin/test1/classPy/webPy/./Account.py", line 98, in InitUser
+    DBManage.InitPackage(packageinfo)
+TypeError: InitPackage() takes 0 positional arguments but 1 was given
+2024-08-14 19:25:25|ERROR|app.py:42|InitPackage() takes 0 positional arguments but 5 were given
+Traceback (most recent call last):
+  File "app.py", line 40, in wrapper
+    return func(*args, **kwargs)
+  File "app.py", line 84, in POST
+    Account.InitUser(phonenum, password, nick, sex, idcard)
+  File "/home/sunxin/test1/classPy/webPy/./Account.py", line 98, in InitUser
+    DBManage.InitPackage(phonenum, password, nick, sex, idcard)
+TypeError: InitPackage() takes 0 positional arguments but 5 were given
+2024-08-14 19:36:30|ERROR|app.py:42|InitPackage() takes 0 positional arguments but 1 was given
+Traceback (most recent call last):
+  File "app.py", line 40, in wrapper
+    return func(*args, **kwargs)
+  File "app.py", line 84, in POST
+    Account.InitUser(phonenum, password, nick, sex, idcard)
+  File "/home/sunxin/test1/classPy/webPy/./Account.py", line 98, in InitUser
+    DBManage.InitPackage(packageinfo)
+TypeError: InitPackage() takes 0 positional arguments but 1 was given
+2024-08-14 19:38:40|ERROR|app.py:42|InitPackage() takes 0 positional arguments but 1 was given
+Traceback (most recent call last):
+  File "app.py", line 40, in wrapper
+    return func(*args, **kwargs)
+  File "app.py", line 84, in POST
+    Account.InitUser(phonenum, password, nick, sex, idcard)
+  File "/home/sunxin/test1/classPy/webPy/./Account.py", line 100, in InitUser
+    DBManage.InitPackage(packageinfo)
+TypeError: InitPackage() takes 0 positional arguments but 1 was given
+2024-08-14 19:41:41|ERROR|app.py:42|InitPackage() got an unexpected keyword argument 'name'
+Traceback (most recent call last):
+  File "app.py", line 40, in wrapper
+    return func(*args, **kwargs)
+  File "app.py", line 84, in POST
+    Account.InitUser(phonenum, password, nick, sex, idcard)
+  File "/home/sunxin/test1/classPy/webPy/./Account.py", line 101, in InitUser
+    DBManage.InitPackage(name = "abc", age = 18)
+TypeError: InitPackage() got an unexpected keyword argument 'name'
+2024-08-14 19:44:06|ERROR|app.py:42|(1054, "Unknown column 'prop_1006' in 'field list'")
+Traceback (most recent call last):
+  File "app.py", line 40, in wrapper
+    return func(*args, **kwargs)
+  File "app.py", line 84, in POST
+    Account.InitUser(phonenum, password, nick, sex, idcard)
+  File "/home/sunxin/test1/classPy/webPy/./Account.py", line 101, in InitUser
+    DBManage.InitPackage(packageinfo)
+  File "/home/sunxin/test1/classPy/webPy/./DBManage.py", line 23, in InitPackage
+    result = Config.gdb.insert(
+  File "/usr/local/lib/python3.8/dist-packages/web/db.py", line 1008, in insert
+    self._db_execute(db_cursor, q1)
+  File "/usr/local/lib/python3.8/dist-packages/web/db.py", line 764, in _db_execute
+    out = cur.execute(query, params)
+  File "/usr/local/lib/python3.8/dist-packages/MySQLdb/cursors.py", line 179, in execute
+    res = self._query(mogrified_query)
+  File "/usr/local/lib/python3.8/dist-packages/MySQLdb/cursors.py", line 330, in _query
+    db.query(q)
+  File "/usr/local/lib/python3.8/dist-packages/MySQLdb/connections.py", line 261, in query
+    _mysql.connection.query(self, query)
+MySQLdb.OperationalError: (1054, "Unknown column 'prop_1006' in 'field list'")

@@ -1,0 +1,25 @@
+2024-08-06 13:39:15|ERROR|app.py:27|(2003, "Can't connect to MySQL server on '192.168.0.223:3306' (110)")
+Traceback (most recent call last):
+  File "app.py", line 25, in wrapper
+    return func(*args, **kwargs)
+  File "app.py", line 71, in POST
+    result = Account.VerifyAccount(userid, password)
+  File "/home/sunxin/test1/classPy/webPy/./Account.py", line 87, in VerifyAccount
+    result = Config.gdb.select("user", what = "password, status", vars = dict(userid=userid), where = "userid=$userid")
+  File "/usr/local/lib/python3.8/dist-packages/web/db.py", line 890, in select
+    return self.query(qout, processed=True)
+  File "/usr/local/lib/python3.8/dist-packages/web/db.py", line 836, in query
+    db_cursor = self._db_cursor()
+  File "/usr/local/lib/python3.8/dist-packages/web/db.py", line 743, in _db_cursor
+    return self.ctx.db.cursor()
+  File "/usr/local/lib/python3.8/dist-packages/web/db.py", line 683, in _getctx
+    self._load_context(self._ctx)
+  File "/usr/local/lib/python3.8/dist-packages/web/db.py", line 695, in _load_context
+    ctx.db = self._connect(self.keywords)
+  File "/usr/local/lib/python3.8/dist-packages/web/db.py", line 723, in _connect
+    return self.db_module.connect(**keywords)
+  File "/usr/local/lib/python3.8/dist-packages/MySQLdb/__init__.py", line 121, in Connect
+    return Connection(*args, **kwargs)
+  File "/usr/local/lib/python3.8/dist-packages/MySQLdb/connections.py", line 195, in __init__
+    super().__init__(*args, **kwargs2)
+MySQLdb.OperationalError: (2003, "Can't connect to MySQL server on '192.168.0.223:3306' (110)")

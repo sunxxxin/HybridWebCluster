@@ -1,0 +1,11 @@
+2024-08-01 14:11:54|ERROR|app.py:27|already passed 0
+Traceback (most recent call last):
+  File "app.py", line 25, in wrapper
+    return func(*args, **kwargs)
+  File "app.py", line 77, in POST
+    result = Account.VerifyAccount(userid, password)
+  File "/home/sunxin/test1/classPy/webPy/./Account.py", line 94, in VerifyAccount
+    if result[0]['status'] != Config.USER_STATUS_NOLMAL:
+  File "/usr/local/lib/python3.8/dist-packages/web/db.py", line 531, in __getitem__
+    raise IndexError("already passed " + str(i))
+IndexError: already passed 0

@@ -1,0 +1,108 @@
+2024-08-17 12:45:46|ERROR|app.py:43|(2003, "Can't connect to MySQL server on '192.168.2.223:3306' (113)")
+Traceback (most recent call last):
+  File "app.py", line 41, in wrapper
+    return func(*args, **kwargs)
+  File "app.py", line 95, in POST
+    result = Account.VerifyAccount(userid, password)
+  File "/home/sunxin/test1/classPy/webPy/./Account.py", line 102, in VerifyAccount
+    result = Config.gdb.select("user", what = "password, status", vars = dict(userid=userid), where = "userid=$userid")
+  File "/usr/local/lib/python3.8/dist-packages/web/db.py", line 890, in select
+    return self.query(qout, processed=True)
+  File "/usr/local/lib/python3.8/dist-packages/web/db.py", line 836, in query
+    db_cursor = self._db_cursor()
+  File "/usr/local/lib/python3.8/dist-packages/web/db.py", line 743, in _db_cursor
+    return self.ctx.db.cursor()
+  File "/usr/local/lib/python3.8/dist-packages/web/db.py", line 683, in _getctx
+    self._load_context(self._ctx)
+  File "/usr/local/lib/python3.8/dist-packages/web/db.py", line 695, in _load_context
+    ctx.db = self._connect(self.keywords)
+  File "/usr/local/lib/python3.8/dist-packages/web/db.py", line 723, in _connect
+    return self.db_module.connect(**keywords)
+  File "/usr/local/lib/python3.8/dist-packages/MySQLdb/__init__.py", line 121, in Connect
+    return Connection(*args, **kwargs)
+  File "/usr/local/lib/python3.8/dist-packages/MySQLdb/connections.py", line 195, in __init__
+    super().__init__(*args, **kwargs2)
+MySQLdb.OperationalError: (2003, "Can't connect to MySQL server on '192.168.2.223:3306' (113)")
+2024-08-17 12:46:22|ERROR|app.py:43|'userid'
+Traceback (most recent call last):
+  File "app.py", line 41, in wrapper
+    return func(*args, **kwargs)
+  File "app.py", line 49, in wrapper
+    return func(*args, **kwargs)
+  File "app.py", line 137, in GET
+    taskcfg = Task.GetTaskCfg(userid, version)
+  File "/home/sunxin/test1/classPy/webPy/./Task.py", line 26, in GetTaskCfg
+    strKey = TaskCfg.KEY_TASK.format(userid, date=datestr)
+KeyError: 'userid'
+2024-08-17 12:47:31|ERROR|app.py:43|'rewardlist'
+Traceback (most recent call last):
+  File "app.py", line 41, in wrapper
+    return func(*args, **kwargs)
+  File "app.py", line 49, in wrapper
+    return func(*args, **kwargs)
+  File "app.py", line 137, in GET
+    taskcfg = Task.GetTaskCfg(userid, version)
+  File "/home/sunxin/test1/classPy/webPy/./Task.py", line 28, in GetTaskCfg
+    InitTaskCfg(userid, datestr)
+  File "/home/sunxin/test1/classPy/webPy/./Task.py", line 18, in InitTaskCfg
+    taskinfo['reward_' + str(id)] = json.dumps(cfg['rewardlist'])
+KeyError: 'rewardlist'
+2024-08-17 12:49:03|ERROR|app.py:43|'rewadlist'
+Traceback (most recent call last):
+  File "app.py", line 41, in wrapper
+    return func(*args, **kwargs)
+  File "app.py", line 49, in wrapper
+    return func(*args, **kwargs)
+  File "app.py", line 137, in GET
+    taskcfg = Task.GetTaskCfg(userid, version)
+  File "/home/sunxin/test1/classPy/webPy/./Task.py", line 37, in GetTaskCfg
+    'rewadlist':cfg['rewadlist'], 'count': 0,
+KeyError: 'rewadlist'
+2024-08-17 12:50:11|ERROR|app.py:43|'userid'
+Traceback (most recent call last):
+  File "app.py", line 41, in wrapper
+    return func(*args, **kwargs)
+  File "app.py", line 49, in wrapper
+    return func(*args, **kwargs)
+  File "app.py", line 137, in GET
+    taskcfg = Task.GetTaskCfg(userid, version)
+  File "/home/sunxin/test1/classPy/webPy/./Task.py", line 47, in GetTaskCfg
+    strKey = TaskCfg.KEY_TASK.format(userid, date=datestr)
+KeyError: 'userid'
+2024-08-17 12:50:51|ERROR|app.py:43|'dict' object has no attribute 'has_key'
+Traceback (most recent call last):
+  File "app.py", line 41, in wrapper
+    return func(*args, **kwargs)
+  File "app.py", line 49, in wrapper
+    return func(*args, **kwargs)
+  File "app.py", line 137, in GET
+    taskcfg = Task.GetTaskCfg(userid, version)
+  File "/home/sunxin/test1/classPy/webPy/./Task.py", line 52, in GetTaskCfg
+    taskdict['count'] = taskinfo[countfield] if taskinfo.has_key(countfield) else 0
+AttributeError: 'dict' object has no attribute 'has_key'
+2024-08-17 12:56:56|ERROR|app.py:43|unsupported type for timedelta seconds component: str
+Traceback (most recent call last):
+  File "app.py", line 41, in wrapper
+    return func(*args, **kwargs)
+  File "app.py", line 49, in wrapper
+    return func(*args, **kwargs)
+  File "app.py", line 137, in GET
+    taskcfg = Task.GetTaskCfg(userid, version)
+  File "/home/sunxin/test1/classPy/webPy/./Task.py", line 41, in GetTaskCfg
+    datestr = Lobby.GetMonday(now)
+  File "/home/sunxin/test1/classPy/webPy/./Lobby.py", line 56, in GetMonday
+    return datetime.datetime.strftime(today - datetime.timedelta(today.weekday(), "%Y_%m_%d"))
+TypeError: unsupported type for timedelta seconds component: str
+2024-08-17 13:04:53|ERROR|app.py:43|unsupported type for timedelta seconds component: str
+Traceback (most recent call last):
+  File "app.py", line 41, in wrapper
+    return func(*args, **kwargs)
+  File "app.py", line 49, in wrapper
+    return func(*args, **kwargs)
+  File "app.py", line 137, in GET
+    taskcfg = Task.GetTaskCfg(userid, version)
+  File "/home/sunxin/test1/classPy/webPy/./Task.py", line 41, in GetTaskCfg
+    datestr = Lobby.GetMonday(now)
+  File "/home/sunxin/test1/classPy/webPy/./Lobby.py", line 56, in GetMonday
+    return datetime.datetime.strftime(today - datetime.timedelta(float(today.weekday()), "%Y_%m_%d"))
+TypeError: unsupported type for timedelta seconds component: str

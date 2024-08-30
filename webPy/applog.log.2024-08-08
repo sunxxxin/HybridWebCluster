@@ -1,0 +1,18 @@
+2024-08-07 13:56:18|ERROR|app.py:30|'<' not supported between instances of 'str' and 'int'
+Traceback (most recent call last):
+  File "app.py", line 28, in wrapper
+    return func(*args, **kwargs)
+  File "app.py", line 100, in POST
+    dictInfo = Shop.ShopBuy(userid, propid, propnum, shopversion, version)
+  File "/home/sunxin/test1/classPy/webPy/./Shop.py", line 25, in ShopBuy
+    if shopversion < ShopCfg.SHOP_VERSION:
+TypeError: '<' not supported between instances of 'str' and 'int'
+2024-08-07 13:57:36|ERROR|app.py:30|'<' not supported between instances of 'str' and 'int'
+Traceback (most recent call last):
+  File "app.py", line 28, in wrapper
+    return func(*args, **kwargs)
+  File "app.py", line 100, in POST
+    dictInfo = Shop.ShopBuy(userid, propid, propnum, shopversion, version)
+  File "/home/sunxin/test1/classPy/webPy/./Shop.py", line 25, in ShopBuy
+    if shopversion < ShopCfg.SHOP_VERSION:
+TypeError: '<' not supported between instances of 'str' and 'int'

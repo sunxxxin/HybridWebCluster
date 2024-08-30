@@ -1,0 +1,195 @@
+2024-08-15 14:48:31|ERROR|app.py:42|'1001'
+Traceback (most recent call last):
+  File "app.py", line 40, in wrapper
+    return func(*args, **kwargs)
+  File "app.py", line 48, in wrapper
+    return func(*args, **kwargs)
+  File "app.py", line 124, in POST
+    dictInfo = Shop.ShopBuy(userid, propid, propnum, shopversion, version)
+  File "/home/sunxin/test1/classPy/webPy/./Shop.py", line 42, in ShopBuy
+    cfg = ShopCfg.SHOP_CFG[propid]
+KeyError: '1001'
+2024-08-15 15:02:17|ERROR|app.py:42|'1001'
+Traceback (most recent call last):
+  File "app.py", line 40, in wrapper
+    return func(*args, **kwargs)
+  File "app.py", line 48, in wrapper
+    return func(*args, **kwargs)
+  File "app.py", line 124, in POST
+    dictInfo = Shop.ShopBuy(userid, propid, propnum, shopversion, version)
+  File "/home/sunxin/test1/classPy/webPy/./Shop.py", line 44, in ShopBuy
+    if cfg[propid]['version'] > version:
+KeyError: '1001'
+2024-08-15 15:04:05|ERROR|app.py:42|1001
+Traceback (most recent call last):
+  File "app.py", line 40, in wrapper
+    return func(*args, **kwargs)
+  File "app.py", line 48, in wrapper
+    return func(*args, **kwargs)
+  File "app.py", line 124, in POST
+    dictInfo = Shop.ShopBuy(userid, propid, propnum, shopversion, version)
+  File "/home/sunxin/test1/classPy/webPy/./Shop.py", line 45, in ShopBuy
+    if cfg[propid]['version'] > version:
+KeyError: 1001
+2024-08-15 15:05:21|ERROR|app.py:42|'1001'
+Traceback (most recent call last):
+  File "app.py", line 40, in wrapper
+    return func(*args, **kwargs)
+  File "app.py", line 48, in wrapper
+    return func(*args, **kwargs)
+  File "app.py", line 124, in POST
+    dictInfo = Shop.ShopBuy(userid, propid, propnum, shopversion, version)
+  File "/home/sunxin/test1/classPy/webPy/./Shop.py", line 44, in ShopBuy
+    if cfg[propid]['version'] > version:
+KeyError: '1001'
+2024-08-15 15:08:35|ERROR|app.py:42|1001
+Traceback (most recent call last):
+  File "app.py", line 40, in wrapper
+    return func(*args, **kwargs)
+  File "app.py", line 48, in wrapper
+    return func(*args, **kwargs)
+  File "app.py", line 124, in POST
+    dictInfo = Shop.ShopBuy(userid, propid, propnum, shopversion, version)
+  File "/home/sunxin/test1/classPy/webPy/./Shop.py", line 44, in ShopBuy
+    if cfg[int(propid)]['version'] > version:
+KeyError: 1001
+2024-08-15 15:09:02|ERROR|app.py:42|'1001'
+Traceback (most recent call last):
+  File "app.py", line 40, in wrapper
+    return func(*args, **kwargs)
+  File "app.py", line 48, in wrapper
+    return func(*args, **kwargs)
+  File "app.py", line 124, in POST
+    dictInfo = Shop.ShopBuy(userid, propid, propnum, shopversion, version)
+  File "/home/sunxin/test1/classPy/webPy/./Shop.py", line 44, in ShopBuy
+    if cfg[str(propid)]['version'] > version:
+KeyError: '1001'
+2024-08-15 15:16:32|ERROR|app.py:42|'1001'
+Traceback (most recent call last):
+  File "app.py", line 40, in wrapper
+    return func(*args, **kwargs)
+  File "app.py", line 48, in wrapper
+    return func(*args, **kwargs)
+  File "app.py", line 124, in POST
+    dictInfo = Shop.ShopBuy(userid, propid, propnum, shopversion, version)
+  File "/home/sunxin/test1/classPy/webPy/./Shop.py", line 45, in ShopBuy
+    if cfg[propid]['version'] > version:
+KeyError: '1001'
+2024-08-15 15:18:57|ERROR|app.py:42|1001
+Traceback (most recent call last):
+  File "app.py", line 40, in wrapper
+    return func(*args, **kwargs)
+  File "app.py", line 48, in wrapper
+    return func(*args, **kwargs)
+  File "app.py", line 124, in POST
+    dictInfo = Shop.ShopBuy(userid, propid, propnum, shopversion, version)
+  File "/home/sunxin/test1/classPy/webPy/./Shop.py", line 45, in ShopBuy
+    if cfg[int(propid)]['version'] > version:
+KeyError: 1001
+2024-08-15 15:20:16|ERROR|app.py:42|1001
+Traceback (most recent call last):
+  File "app.py", line 40, in wrapper
+    return func(*args, **kwargs)
+  File "app.py", line 48, in wrapper
+    return func(*args, **kwargs)
+  File "app.py", line 124, in POST
+    dictInfo = Shop.ShopBuy(userid, propid, propnum, shopversion, version)
+  File "/home/sunxin/test1/classPy/webPy/./Shop.py", line 45, in ShopBuy
+    if cfg[int(propid)]['version'] > version:
+KeyError: 1001
+2024-08-15 15:22:25|ERROR|app.py:42|'>' not supported between instances of 'int' and 'str'
+Traceback (most recent call last):
+  File "app.py", line 40, in wrapper
+    return func(*args, **kwargs)
+  File "app.py", line 48, in wrapper
+    return func(*args, **kwargs)
+  File "app.py", line 124, in POST
+    dictInfo = Shop.ShopBuy(userid, propid, propnum, shopversion, version)
+  File "/home/sunxin/test1/classPy/webPy/./Shop.py", line 45, in ShopBuy
+    if cfg['version'] > version:
+TypeError: '>' not supported between instances of 'int' and 'str'
+2024-08-15 15:23:45|ERROR|app.py:42|'>' not supported between instances of 'str' and 'int'
+Traceback (most recent call last):
+  File "app.py", line 40, in wrapper
+    return func(*args, **kwargs)
+  File "app.py", line 48, in wrapper
+    return func(*args, **kwargs)
+  File "app.py", line 124, in POST
+    dictInfo = Shop.ShopBuy(userid, propid, propnum, shopversion, version)
+  File "/home/sunxin/test1/classPy/webPy/./Shop.py", line 49, in ShopBuy
+    if propnum > cfg['inventory']:
+TypeError: '>' not supported between instances of 'str' and 'int'
+2024-08-15 15:24:44|ERROR|app.py:42|'>' not supported between instances of 'str' and 'int'
+Traceback (most recent call last):
+  File "app.py", line 40, in wrapper
+    return func(*args, **kwargs)
+  File "app.py", line 48, in wrapper
+    return func(*args, **kwargs)
+  File "app.py", line 124, in POST
+    dictInfo = Shop.ShopBuy(userid, propid, propnum, shopversion, version)
+  File "/home/sunxin/test1/classPy/webPy/./Shop.py", line 49, in ShopBuy
+    if propnum > cfg['inventory']:
+TypeError: '>' not supported between instances of 'str' and 'int'
+2024-08-15 15:26:35|ERROR|app.py:42|must be real number, not str
+Traceback (most recent call last):
+  File "app.py", line 40, in wrapper
+    return func(*args, **kwargs)
+  File "app.py", line 48, in wrapper
+    return func(*args, **kwargs)
+  File "app.py", line 124, in POST
+    dictInfo = Shop.ShopBuy(userid, propid, propnum, shopversion, version)
+  File "/home/sunxin/test1/classPy/webPy/./Shop.py", line 58, in ShopBuy
+    needmoney = int(math.floor(cfg['money'] * cfg['discount'] * propnum))
+TypeError: must be real number, not str
+2024-08-15 15:27:51|ERROR|app.py:42|get() takes 2 positional arguments but 3 were given
+Traceback (most recent call last):
+  File "app.py", line 40, in wrapper
+    return func(*args, **kwargs)
+  File "app.py", line 48, in wrapper
+    return func(*args, **kwargs)
+  File "app.py", line 124, in POST
+    dictInfo = Shop.ShopBuy(userid, propid, propnum, shopversion, version)
+  File "/home/sunxin/test1/classPy/webPy/./Shop.py", line 59, in ShopBuy
+    money = Lobby.GetMoney(userid)
+  File "/home/sunxin/test1/classPy/webPy/./Lobby.py", line 8, in GetMoney
+    money = int(Config.grds.get(strKey, 'money'))
+TypeError: get() takes 2 positional arguments but 3 were given
+2024-08-15 15:41:36|ERROR|app.py:42|int() argument must be a string, a bytes-like object or a number, not 'list'
+Traceback (most recent call last):
+  File "app.py", line 40, in wrapper
+    return func(*args, **kwargs)
+  File "app.py", line 48, in wrapper
+    return func(*args, **kwargs)
+  File "app.py", line 124, in POST
+    dictInfo = Shop.ShopBuy(userid, propid, propnum, shopversion, version)
+  File "/home/sunxin/test1/classPy/webPy/./Shop.py", line 59, in ShopBuy
+    money = Lobby.GetMoney(userid)
+  File "/home/sunxin/test1/classPy/webPy/./Lobby.py", line 9, in GetMoney
+    money = int(Config.grds.hmget(strKey, 'money'))
+TypeError: int() argument must be a string, a bytes-like object or a number, not 'list'
+2024-08-15 15:43:07|ERROR|app.py:42|local variable 'result' referenced before assignment
+Traceback (most recent call last):
+  File "app.py", line 40, in wrapper
+    return func(*args, **kwargs)
+  File "app.py", line 48, in wrapper
+    return func(*args, **kwargs)
+  File "app.py", line 124, in POST
+    dictInfo = Shop.ShopBuy(userid, propid, propnum, shopversion, version)
+  File "/home/sunxin/test1/classPy/webPy/./Shop.py", line 59, in ShopBuy
+    money = Lobby.GetMoney(userid)
+  File "/home/sunxin/test1/classPy/webPy/./Lobby.py", line 12, in GetMoney
+    if result:
+UnboundLocalError: local variable 'result' referenced before assignment
+2024-08-15 15:45:02|ERROR|app.py:42|'1001'
+Traceback (most recent call last):
+  File "app.py", line 40, in wrapper
+    return func(*args, **kwargs)
+  File "app.py", line 48, in wrapper
+    return func(*args, **kwargs)
+  File "app.py", line 124, in POST
+    dictInfo = Shop.ShopBuy(userid, propid, propnum, shopversion, version)
+  File "/home/sunxin/test1/classPy/webPy/./Shop.py", line 88, in ShopBuy
+    PresentProp(userid, propid, propnum)
+  File "/home/sunxin/test1/classPy/webPy/./Shop.py", line 95, in PresentProp
+    proplist = ShopCfg.SHOP_CFG[propid]['proplist']
+KeyError: '1001'
